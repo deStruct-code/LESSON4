@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "TTLakes-Regular";
+    src: url(./fonts/TTLakes-Regular.ttf);
+}
+
+*{  
+    font-family: "TTLakes-Regular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 320px;
+    margin-left: 24px;
+}
+
+.main{
+    margin-left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+
+}
+
+.list__item{
+    margin-bottom: 24px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list__link{
+    display: inline-block;
+    text-decoration: none;
+    color:rgba(27, 28, 33, 1);
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+
+.list__link:hover{
+    color: rgba(126, 126, 130, 1);
+}
+
+.list__link::before{
+    background-color: transparent;
+}
+
+.list__link:hover:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    left: -24px;
+    top: 10px;
+    border-radius: 0px 10px 10px 0px;
+    transform: translateY(-50%);
+
+}
+
+
