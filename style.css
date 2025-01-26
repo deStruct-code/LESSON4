@@ -7,6 +7,15 @@
     src: url(./fonts/TTLakes-Bold.ttf)
 }
 
+
+body, html{
+    height: 100%;
+}
+
+li{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 *{  
     font-family: "TTLakes-Regular";
     margin: 0;
@@ -16,17 +25,29 @@
 
 .container{
     width: 320px;
-    /* margin-left: 24px; */
+    position: relative;
+    background: #fff;
     padding-left: 24px;
     box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
     
 }
 
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 750px;
+}
+
 .main{
     margin-left: 0;
     margin-right: 0;
-    margin-top: 46px;
+    padding-top: 46px;
+    max-height: 300px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav{
@@ -76,6 +97,7 @@
     top: 7px;
     left: 8px;
 }
+
 .close-cross::after{
     content: '';
     border-radius: 1px;
@@ -136,7 +158,6 @@
 
 .items{
     display: flex;
-    margin-top: 268px;
 }
 
 .menu__item{
@@ -152,6 +173,12 @@
     line-height: 24px;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: flex-end;
+}
 .tel{
     display: block;
     margin-top: 12px;
@@ -178,4 +205,3 @@
 .lang:hover{
     color: rgba(126, 126, 130, 1);
 }
-
